@@ -1,0 +1,91 @@
+.custom-card .flleft {
+  float: left;
+}
+
+.custom-card .anchorstyle {
+  text-decoration: none;
+}
+
+.custom-card .verticallycenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.custom-card .d-flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.custom-card .justflexend {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px;
+}
+
+.custom-card .justflexstart {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.custom-card .main-container {
+  width: 100%;
+}
+
+.custom-card .main-container .img-container {
+  float: left;
+}
+
+.custom-card .main-container .text-container {
+  float: left;
+}
+
+.custom-card .main-container .w-100 {
+  width: 100% !important;
+}
+
+.custom-card .main-container .w-90 {
+  width: 90% !important;
+}
+
+.custom-card .main-container .w-80 {
+  width: 80% !important;
+}
+
+.custom-card .main-container .w-70 {
+  width: 70% !important;
+}
+
+.custom-card .main-container .w-60 {
+  width: 60% !important;
+}
+
+.custom-card .main-container .w-50 {
+  width: 50% !important;
+}
+
+.custom-card .main-container .w-40 {
+  width: 40% !important;
+}
+
+.custom-card .main-container .w-30 {
+  width: 30% !important;
+}
+
+.custom-card .main-container .w-20 {
+  width: 20% !important;
+}
+
+.custom-card .main-container .w-10 {
+  width: 10% !important;
+}
+
