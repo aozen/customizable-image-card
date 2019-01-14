@@ -43,4 +43,9 @@ If do not want to sidebyside and want to text above the image use sizeOfImage wi
 
 # Sample
 
+Demo image:
 ![alt text](https://raw.githubusercontent.com/aozen/customizable-image-card/master/img/Card.png)
+
+Demo image2:
+
+![alt text](https://raw.githubusercontent.com/aozen/customizable-image-card/master/img/card2.png)
