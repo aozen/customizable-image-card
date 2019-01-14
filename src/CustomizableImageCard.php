@@ -18,7 +18,7 @@ class CustomizableImageCard extends Card
         return $this->withMeta([
             'title' => 'This package offers you customizable card options. Which includes: \'content area, image, redirect url, text color, size of image and sidebyside(image and text) option\'',
             'imageUrl' => 'https://picsum.photos/600/120',
-            'redirectUrl' => 'https://github.com/aozen/customizable-image-card',
+            'redirectUrl' => null,
             'textcolor' => '#B22222',
             'isFlex' => 'd-flex-center',
             'imgsize' => 'w-30 justflexend',
