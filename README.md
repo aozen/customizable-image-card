@@ -16,7 +16,7 @@ public function cards(Request $request)
     {
         return [
             (new CustomizableImageCard)
-            ->content("This package offers you customizable card options.")
+            ->content("Your text is coming here. There is no limitation for this.")
             ->image("https://picsum.photos/600/120")
             ->url("https://github.com/aozen/customizable-image-card")
             ->color("#CD5C5C")
