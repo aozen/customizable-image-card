@@ -33,6 +33,7 @@ return [
 ```
 
 default options are 30% width image, 70% width text, #B22222 text color and stays sidebyside.
+->sizeOfImage(int) options only contains **10 and multiples**. It coming from css and add w-10, w-20 .. w-90, w-100 classes.
 
 If do not want to sidebyside and want to text above the image use sizeOfImage with 100%
 ```
