@@ -6,7 +6,7 @@
                     <img :src="card.imageUrl" style="margin: 5px;">
                 </a>
             </div>
-            <div class="text-container text-center text-3xl text-80 font-light verticallycenter" :class="card.textsize">
+            <div class="text-container text-center text-80 font-light verticallycenter" :class="card.textsize" :style="{ 'font-size': card.fontsize }">
                 <a :href="card.redirectUrl" class="anchorstyle" :style="{ 'color': card.textcolor }" target="_blank">
                     {{card.title}}
                 </a>
@@ -33,7 +33,8 @@
                 isFlex: "",
                 imgsize: "",
                 textsize: "",
-                panelheight: ""
+                panelheight: "",
+                fontsize: ""
 
             }
         },
@@ -53,7 +54,8 @@
                         isFlex: this.card.isFlex,
                         imgsize: this.card.imgsize,
                         textsize: this.card.textsize,
-                        panelheight: this.card.panelheight
+                        panelheight: this.card.panelheight,
+                        fontsize: this.card.fontsize
                     }
                 })
                     .then(({data}) => {
@@ -65,6 +67,7 @@
                         this.$set(this, 'imgsize', data.imgsize);
                         this.$set(this, 'textsize', data.textsize);
                         this.$set(this, 'panelheight', data.panelheight);
+                        this.$set(this, 'fontsize', data.fontsize);
                     })
             }
         }

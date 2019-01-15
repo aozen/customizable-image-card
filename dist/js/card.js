@@ -276,7 +276,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             isFlex: "",
             imgsize: "",
             textsize: "",
-            panelheight: ""
+            panelheight: "",
+            fontsize: ""
 
         };
     },
@@ -298,7 +299,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     isFlex: this.card.isFlex,
                     imgsize: this.card.imgsize,
                     textsize: this.card.textsize,
-                    panelheight: this.card.panelheight
+                    panelheight: this.card.panelheight,
+                    fontsize: this.card.fontsize
                 }
             }).then(function (_ref) {
                 var data = _ref.data;
@@ -311,6 +313,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 _this.$set(_this, 'imgsize', data.imgsize);
                 _this.$set(_this, 'textsize', data.textsize);
                 _this.$set(_this, 'panelheight', data.panelheight);
+                _this.$set(_this, 'fontsize', data.fontsize);
             });
         }
     }
@@ -363,8 +366,9 @@ var render = function() {
             "div",
             {
               staticClass:
-                "text-container text-center text-3xl text-80 font-light verticallycenter",
-              class: _vm.card.textsize
+                "text-container text-center text-80 font-light verticallycenter",
+              class: _vm.card.textsize,
+              style: { "font-size": _vm.card.fontsize }
             },
             [
               _c(
