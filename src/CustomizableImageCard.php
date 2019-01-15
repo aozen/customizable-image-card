@@ -22,7 +22,8 @@ class CustomizableImageCard extends Card
             'textcolor' => '#B22222',
             'isFlex' => 'd-flex-center',
             'imgsize' => 'w-30 justflexend',
-            'textsize' => 'w-70 justflexstart'
+            'textsize' => 'w-70 justflexstart',
+            'panelheight' => ''
         ]);
 
     }
@@ -41,6 +42,10 @@ class CustomizableImageCard extends Card
 
     public function color($string) {
         return $this->withMeta(['textcolor' => $string]);
+    }
+
+    public function panelheight($int) {
+        return $this->withMeta(['panelheight' => $int]);
     }
 
     public function sizeOfImage($int)

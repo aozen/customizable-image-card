@@ -1,5 +1,5 @@
 <template>
-    <card class="flex flex-col items-center justify-center custom-card">
+    <card class="flex flex-col items-center justify-center custom-card" :style="{ 'height': card.panelheight }">
         <div class="main-container px-3 py-3" :class="card.isFlex">
             <div class="img-container text-center text-3xl text-80 font-light verticallycenter" :class="card.imgsize">
                 <a :href="card.redirectUrl" class="anchorstyle" target="_blank">
@@ -32,7 +32,9 @@
                 textcolor: "",
                 isFlex: "",
                 imgsize: "",
-                textsize: ""
+                textsize: "",
+                panelheight: ""
+
             }
         },
 
@@ -50,7 +52,8 @@
                         textcolor: this.card.textcolor,
                         isFlex: this.card.isFlex,
                         imgsize: this.card.imgsize,
-                        textsize: this.card.textsize
+                        textsize: this.card.textsize,
+                        panelheight: this.card.panelheight
                     }
                 })
                     .then(({data}) => {
@@ -61,6 +64,7 @@
                         this.$set(this, 'isFlex', data.isFlex);
                         this.$set(this, 'imgsize', data.imgsize);
                         this.$set(this, 'textsize', data.textsize);
+                        this.$set(this, 'panelheight', data.panelheight);
                     })
             }
         }

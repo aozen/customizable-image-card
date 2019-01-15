@@ -275,7 +275,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             textcolor: "",
             isFlex: "",
             imgsize: "",
-            textsize: ""
+            textsize: "",
+            panelheight: ""
+
         };
     },
     mounted: function mounted() {
@@ -295,7 +297,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     textcolor: this.card.textcolor,
                     isFlex: this.card.isFlex,
                     imgsize: this.card.imgsize,
-                    textsize: this.card.textsize
+                    textsize: this.card.textsize,
+                    panelheight: this.card.panelheight
                 }
             }).then(function (_ref) {
                 var data = _ref.data;
@@ -307,6 +310,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 _this.$set(_this, 'isFlex', data.isFlex);
                 _this.$set(_this, 'imgsize', data.imgsize);
                 _this.$set(_this, 'textsize', data.textsize);
+                _this.$set(_this, 'panelheight', data.panelheight);
             });
         }
     }
@@ -322,7 +326,10 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "card",
-    { staticClass: "flex flex-col items-center justify-center custom-card" },
+    {
+      staticClass: "flex flex-col items-center justify-center custom-card",
+      style: { height: _vm.card.panelheight }
+    },
     [
       _c(
         "div",
