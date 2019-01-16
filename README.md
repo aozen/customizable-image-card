@@ -32,6 +32,10 @@ return [
         ];
 ```
 
+
+
+# Optional Css Settings
+
 default options are 30% width image, 70% width text, #B22222 text color and stays sidebyside.
 ->sizeOfImage(int) options only contains **10 and multiples**. It coming from css and add w-10, w-20 .. w-90, w-100 classes.
 
@@ -41,6 +45,23 @@ If do not want to sidebyside and want to text above the image use sizeOfImage wi
 ```
 
 100% image is fill the div and put the text above.
+
+Also there is a fontsize option. 
+```
+(new CustomizableImageCard)->fontsize("1.350rem"),
+(new CustomizableImageCard)->fontsize("12px")
+```
+
+If you are using this with width
+```
+(new CustomizableImageCard)->width("1/2")
+```
+
+Need to add panelheight option. Because your image's height smaller then texts div height and padding displays realy boring. Solution is simple. Change card height with css
+```
+(new CustomizableImageCard)->width("1/2")->panelheight("75px")
+```
+
 
 # Sample
 
